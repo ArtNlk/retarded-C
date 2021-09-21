@@ -5,15 +5,14 @@
 
 int main() //В оригинале void. Все пишут int, везде, всегда
 {
-    setlocale(LC_ALL, "ru_RU.UTF8");//Еще попробовать "Rus" и "Russian" и "ru-RU"
+    setlocale(LC_ALL, "ru_RU.UTF8");//Еще попробовать "Rus" "Russian" "ru-RU"
     int *a; // Переменные. а - указатель на int, см презентацию "указатели"
     int n;
     int sum;
     int i;
     printf("Введите количество чисел ");
     scanf("%d",&n); //Считывание целого числа. Знаки формата: %c - char, %d - int, %f - float, %lf - double
-    a=(int*) calloc(n,sizeof(int)); //Выделение n мест, каждое размером с int равносильно malloc(n*sizeof(int)).
-    //еще одно отличие - calloc заполняет массив нулями, malloc - нет
+    a=(int*) calloc(n,sizeof(int)); //Выделение n мест, каждое размером с int
     printf("введите числа");
     for (i=0; i<n; i++)
     {
