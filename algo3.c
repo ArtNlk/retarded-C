@@ -30,7 +30,7 @@ int main()
 
     for(int i = 0; i < n; i++)
     {
-        if((name[i][0]) == 'A')
+        if((name[i][0]) == 'F')
         {
             best[k] = calloc(strlen(name[i]),sizeof(char));
             strcpy(best[k],name[i]);
