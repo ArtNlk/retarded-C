@@ -39,13 +39,15 @@ int main()
 
     end = n-1;
 
-    while((l == -1) && (end > start))
+    while((l == -1) && (start <= end))
     {
         mid = (start+end)/2;
+        printf("%d %d %d\n",start,mid,end);
+        getchar();
         cmp = strcmp(name[mid],ctrl);
         if(cmp == 0){l = mid;}
-        if(cmp < 0){start = mid;}
-        if(cmp > 0){end = mid;}
+        if(cmp < 0){start = mid+1;}
+        if(cmp > 0){end = mid-1;}
     }
     printf("Искомое по индексу %d",l);
 

@@ -13,7 +13,7 @@ int main()
     char* ctrl;
     char temp[255];
 
-    printf("Введи число строк\n");
+    printf("Введи число чисел\n");
     scanf("%d",&n);
 
     name = calloc(n,sizeof(char*));
