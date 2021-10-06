@@ -4,7 +4,6 @@
 #include <malloc.h>
 #include <string.h>
 #include <locale.h>
-#include <unistd.h>
 
 int main()
 {
@@ -43,8 +42,6 @@ int main()
     while((l == -1) && (end > start))
     {
         mid = (start+end)/2;
-        printf("Mid: %d",mid);
-        sleep(1);
         cmp = strcmp(name[mid],ctrl);
         if(cmp == 0){l = mid;}
         if(cmp < 0){start = mid;}
