@@ -18,12 +18,12 @@ int main()
     char* ctrl;
     char temp[200];
 
-    printf("Введи  n:\n");
+    printf("Enter  n:\n");
     scanf("%d",&n);
 
     name = calloc(n,sizeof(char*));
 
-    printf("Введи строки: \n");
+    printf("Enter strings: \n");
 
     for(int i = 0; i < n; i++)
     {
@@ -32,7 +32,7 @@ int main()
         strcpy(name[i],temp);
     }
 
-    printf("Введи искомое:\n");
+    printf("To find:\n");
     scanf("%s",temp);
     ctrl = calloc(strlen(temp)+1,sizeof(char));
     strcpy(ctrl,temp);
@@ -47,7 +47,7 @@ int main()
         if(cmp < 0){start = mid+1;}
         if(cmp > 0){end = mid-1;}
     }
-    printf("Искомое по индексу %d",l);
+    printf("Found at index %d",l);
 
     for(int i = 0; i < n; i++)
     {

@@ -12,13 +12,13 @@ int main()
     char* temp;
 
 
-    printf("Введи количество чисел");
+    printf("Number of strings");
     scanf("%d",&n);
 
     name = calloc(n,sizeof(char*));
     best = calloc(n,sizeof(char*));
     temp = calloc(200,sizeof(char));
-    printf("Введи строки");
+    printf("Strings:");
     for(int i = 0; i < n; i++)
     {
         scanf("%s",temp);
@@ -39,7 +39,7 @@ int main()
         }
     }
 
-    printf("Подходящие варианты:\n");
+    printf("Good variants:\n");
 
     for(int i = 0; i < k; i++)
     {

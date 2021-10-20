@@ -18,16 +18,16 @@ int main()
     int* rate;
     char tmp[200];
 
-    printf("Введи n:\n");
+    printf("Enter n:\n");
     scanf("%d",&n);
     name = calloc(n,sizeof(char*));
     list = calloc(n,sizeof(char*));
     rate = calloc(n,sizeof(int));
 
-    printf("Введи список: \n");
+    printf("Enter list: \n");
     for(int i = 0; i < n; i++)
     {
-        printf("Введи название: \n");
+        printf("Enter name: \n");
         scanf("%s",tmp);
         name[i] = calloc(strlen(tmp)+1,sizeof(char));
         strcpy(name[i],tmp);
@@ -58,9 +58,9 @@ int main()
             rate[l]++;
         }
     }
-    printf("Список без повторений с рейтингами\n");
+    printf("No repeats with ratings\n");
 
-    printf("Имя\t\t\tРейтинг\n");
+    printf("Name\t\t\tRating\n");
 
     for(int i = 0; i < k; i++)
     {

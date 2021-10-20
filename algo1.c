@@ -10,10 +10,10 @@ int main() //В оригинале void
     int n;
     int sum;
     int i;
-    printf("Введите количество чисел ");
+    printf("Number of numbers ");
     scanf("%d",&n); //Считывание целого числа. Знаки формата: %c - char, %d - int, %f - float, %lf - double
     a=(int*) calloc(n,sizeof(int)); //Выделение n мест, каждое размером с int
-    printf("введите числа");
+    printf("Numbers: \n");
     for (i=0; i<n; i++)
     {
         scanf("%d",&a[i]);//Считывание целого числа.
@@ -24,7 +24,7 @@ int main() //В оригинале void
     {
         sum+=a[i];
     }
-    printf("сумма чисел= %d", sum);
+    printf("sum= %d", sum);
     free(a);//Этого нет в оригинале, но душа болит память не освобождать.
     // Если мы вызовем оригинальный код миллион раз с миллионом чисел, мы получим ошибку.
 

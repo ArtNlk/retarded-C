@@ -13,12 +13,12 @@ int main()
     char* ctrl;
     char temp[255];
 
-    printf("Введи число чисел\n");
+    printf("Number of numbers\n");
     scanf("%d",&n);
 
     name = calloc(n,sizeof(char*));
 
-    printf("Введи список\n");
+    printf("Enter list\n");
 
     for(int i = 0; i < n; i++)
     {
@@ -27,7 +27,7 @@ int main()
         strcpy(name[i],temp);
     }
 
-    printf("Введи искомое\n");
+    printf("Enter to find\n");
     scanf("%s", temp);
     ctrl = calloc(strlen(temp)+1,sizeof(char));
     strcpy(ctrl,temp);
@@ -42,7 +42,7 @@ int main()
         k++;
     }
 
-    printf("Искомое найдено по индексу %d\n",l);
+    printf("Found at index %d\n",l);
     for(int i = 0; i < n; i++)
     {
         free(name[i]);

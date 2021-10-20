@@ -17,12 +17,12 @@ int main()
     char** list;
     char tmp[200];
 
-    printf("Введи n:\n");
+    printf("Enter n:\n");
     scanf("%d",&n);
     name = calloc(n,sizeof(char*));
     list = calloc(n,sizeof(char*));
 
-    printf("Введи список: \n");
+    printf("Enter list: \n");
     for(int i = 0; i < n; i++)
     {
         printf("%d: ",i+1);
@@ -52,7 +52,7 @@ int main()
             k++;
         }
     }
-    printf("Список без повторений:\n");
+    printf("No repeats:\n");
 
     for(int i = 0; i < k; i++)
     {

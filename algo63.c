@@ -19,21 +19,21 @@ int main()
     int* ch;
     char tmp[200];
 
-    printf("Введи n:\n");
+    printf("Enter n:\n");
     scanf("%d",&n);
     name = calloc(n,sizeof(char*));
     list = calloc(n,sizeof(char*));
     sum = calloc(n,sizeof(int));
     ch = calloc(n,sizeof(int));
 
-    printf("Введи список: \n");
+    printf("Enter list: \n");
     for(int i = 0; i < n; i++)
     {
-        printf("Введи название: \n");
+        printf("Enter name: \n");
         scanf("%s",tmp);
         name[i] = calloc(strlen(tmp)+1,sizeof(char));
         strcpy(name[i],tmp);
-        printf("Введи характеристику: \n");
+        printf("enter characteristic: \n");
         scanf("%d",&ch[i]);
     }
 
@@ -62,9 +62,9 @@ int main()
             sum[l] += ch[i];
         }
     }
-    printf("Список без повторений с характеристикой:\n");
+    printf("No repeats with ch:\n");
 
-    printf("Имя\t\t\tХарактеристика\n");
+    printf("Name\t\t\tcharacteristic\n");
 
     for(int i = 0; i < k; i++)
     {
