@@ -10,7 +10,7 @@ int main()
 {
     //setlocale(LC_ALL,"ru-RU");
     char str[200];
-    char zn[] = ",.!?;";
+    char zn[] = " ,.!?;";
     char** w;
     int k;
     char tmp[200] = {0};
